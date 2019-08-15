@@ -6,8 +6,8 @@ import utils.*;
 import java.util.ArrayList;
 
 public class EditEmployee implements StrategyMenu {
-    Prints print = new Prints();
-    ShowOptions show = new ShowOptions();
+    Prints print = SingletonPrint.getInstance();
+    ShowOptions show =  SingletonShowOptions.getInstance();
     Copy copy = new Copy();
     public void menu(ArrayList<int[]> agendasList, Day systemDate, ArrayList<Employee> employeeList) {
         boolean flag = true, flag_aux = false;

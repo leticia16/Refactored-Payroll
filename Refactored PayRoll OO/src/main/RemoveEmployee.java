@@ -7,7 +7,7 @@ import utils.Exceptions;
 import java.util.ArrayList;
 
 public class RemoveEmployee implements StrategyMenu {
-    Prints print = new Prints();
+    Prints print = SingletonPrint.getInstance();
     public void menu(ArrayList<int[]> agendasList, Day systemDate, ArrayList<Employee> employeeList) {
         int aux;
         boolean alert = true;

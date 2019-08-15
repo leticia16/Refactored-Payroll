@@ -4,11 +4,12 @@ import Employee.*;
 import utils.Day;
 import utils.Exceptions;
 import utils.Prints;
+import utils.SingletonPrint;
 
 import java.util.ArrayList;
 
 public class LaunchACardPoint implements StrategyMenu{
-    Prints print = new Prints();
+    Prints print = SingletonPrint.getInstance();
     public void menu(ArrayList<int[]> agendasList, Day systemDate, ArrayList<Employee> employeeList) {
         int id;
         boolean alert = false;

@@ -20,7 +20,7 @@ public class Main {
         ArrayList<int[]> agendasList = new ArrayList<int[]>();
         Day systemDate = new Day(true);
         ArrayList<Employee> employeeList = new ArrayList<Employee>();
-        ShowOptions show = new ShowOptions();
+        ShowOptions show = SingletonShowOptions.getInstance();
         Agenda agenda = new Agenda();
         int op = 1; // To print the Menu Program
         boolean start = true;
