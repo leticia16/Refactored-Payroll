@@ -17,7 +17,9 @@ public class EditEmployee implements StrategyMenu {
         System.out.println("--> ID of Employee: ");
         while (true) {
             int id = Exceptions.inputInteger();
-            for (Employee e : employeeList) {
+            int i = 0;
+            for (i = 0; i<employeeList.size(); i++) {
+                Employee e = employeeList.get(i);
                 int aux = e.getId();
                 if (aux == id) {
                     show.showEditOptions();
