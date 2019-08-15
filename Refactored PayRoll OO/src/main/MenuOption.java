@@ -43,12 +43,12 @@ public enum MenuOption {
     },
     NEXTDAY{
         public StrategyMenu optionMenu(){
-            return new NextDay();  // Extract Method (Smell : Long Method)
+            return new NextDay();
         }
     },
     CHOOSEADIFFERENTAGENDA{
         public StrategyMenu optionMenu(){
-            return new ChooseADifferentAgenda();  // Extract Method (Smell : Long Method)
+            return new ChooseADifferentAgenda();
         }
     },
     NEWAGENDA{
