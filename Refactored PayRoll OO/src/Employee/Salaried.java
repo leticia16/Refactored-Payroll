@@ -4,7 +4,7 @@ import utils.Agenda;
 import utils.Day;
 import utils.Exceptions;
 
-public class Salaried extends Employee implements SalariedInterface {
+public class Salaried extends Employee {
 
     public Salaried(Day systemDate, int size){
         System.out.println("--> Type the Employee's data:");
@@ -42,7 +42,6 @@ public class Salaried extends Employee implements SalariedInterface {
         Agenda a = new Agenda();
         a.setMonthly(0); // Last Work Day of Month
         this.agenda = a;
-//        this.agenda = new Agenda();
     }
     public Salaried(Salaried original){
         this.name = original.getName();

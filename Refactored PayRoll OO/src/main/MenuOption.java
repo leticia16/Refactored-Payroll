@@ -28,12 +28,12 @@ public enum MenuOption {
     },
     EDITEMPLOYEE{
         public StrategyMenu optionMenu(){
-            return new EditEmployee(); // need to Apply Strategy yet DONT FORGET (maybe use State pattern)
+            return new EditEmployee();
         }
     },
     PAYROLL{
         public StrategyMenu optionMenu(){
-            return new Payroll(); // need to refactor this (maybe use strategy Pattern)
+            return new Payroll();
         }
     },
     PRINTEPLOYEELIST{
@@ -53,7 +53,7 @@ public enum MenuOption {
     },
     NEWAGENDA{
         public StrategyMenu optionMenu(){
-            return new NewAgenda(); // see the size of method
+            return new NewAgenda();
         }
     };
     public abstract StrategyMenu optionMenu();

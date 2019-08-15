@@ -12,10 +12,6 @@ public class ShowOptions {
     public  void showMenuOptions(Day systemDate){
         System.out.println("___________________________________________________________");
         System.out.println(" ||||||||||||||||||    PAYROLL SYSTEM    ||||||||||||||||||");
-//        if(start){
-//            systemDate = systemDate.SystemDate();
-//            System.out.println("___________________________________________________________");
-//        }
         System.out.println("    "+ systemDate.getWeekDay() +", "+ systemDate.getMonth()+" "+ systemDate.getDay()+" of "+  systemDate.getYear()+ "     ");
         System.out.println(" %%%%%  System Features  %%%%%% ");
         System.out.println("(1)  Add Employee");
@@ -25,10 +21,8 @@ public class ShowOptions {
         System.out.println("(5)  Launch a Service Rate");
         System.out.println("(6)  Edit an Employee");
         System.out.println("(7)  Run PayRoll");
-//        System.out.println("(8)  Undo");
-//        System.out.println("(9)  Redo");
-        System.out.println("(8) Show Employee's List");
-        System.out.println("(9) End of the working day");
+        System.out.println("(8)  Show Employee's List");
+        System.out.println("(9)  End of the working day");
         System.out.println("(10) Choose A Different Agenda");
         System.out.println("(11) New Agenda");
         System.out.println("(0)  Exit ");

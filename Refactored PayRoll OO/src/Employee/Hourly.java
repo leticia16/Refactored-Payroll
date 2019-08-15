@@ -5,7 +5,7 @@ import utils.Exceptions;
 import java.util.Scanner;
 import java.util.Calendar;
 
-public class Hourly extends Employee implements HourlyInterface{
+public class Hourly extends Employee{
     // PAYMENT : ALL FRIDAY
     static Scanner input = new Scanner(System.in);
     protected int cardPoint;
@@ -35,9 +35,6 @@ public class Hourly extends Employee implements HourlyInterface{
         this.alreadyPaid = original.getAlreadyPaid();
         this.agenda = new Agenda();
         this.cardPoint = original.cardPoint;
-//        Agenda a = new Agenda();
-//        a.setWeekly(1,6); // All Friday
-//        this.agenda = a;
     }
 
     public Hourly(Day systemDate, int size){

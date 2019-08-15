@@ -4,7 +4,7 @@ import utils.Agenda;
 import utils.Day;
 import utils.Exceptions;
 
-public class Commissioned extends Employee implements CommissionedInterface {
+public class Commissioned extends Employee {
 
     public double comissionRate;
     public double valueSale;
